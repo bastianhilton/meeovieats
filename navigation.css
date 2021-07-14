@@ -1,0 +1,177 @@
+/*************** Top Navigation ***************/
+
+.topnav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.topnav li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.leftnav {
+    position: absolute;
+    top: -5px;
+}
+
+.leftnav .fas {
+    font-size: 35px;
+    color: chocolate;
+}
+
+.leftnav p {
+    display: inline-block;
+    padding-left: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.topsearch {
+    top: 20px;
+    width: 70%;
+    position: absolute;
+    left: 400px;
+}
+
+.topsearch input {
+    height: 50px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px thin black;
+}
+
+.topsearch button {
+    height: 51px;
+    left: -50px;
+    width: 50px;
+    position: relative;
+    background-color: chocolate;
+    border: none;
+}
+
+.lowernav {
+    top: 35px;
+    position: absolute;
+    float: right;
+    right: 15px;
+}
+
+.lowernav a {
+    text-decoration: none;
+    color: chocolate;
+    font-size: 20px;
+}
+
+.lowernav a:active {
+    color: brown;
+}
+
+.lowernav a:hover {
+    color: indianred;
+}
+
+/*************** Right Navigation ***************/
+
+.rightnav {
+    float: right;
+    right: 15px;
+    top: 35%;
+    position: fixed;
+    z-index: 9999;
+}
+
+.rightnav li {
+    display: block;
+    padding: 10px;
+}
+
+.rightnav .fas {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.rightnav p {
+    font-size: 20px;
+}
+
+/*************** Footer Navigation ***************/
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+footer li {
+    display: inline-block;
+    padding-right: 80px;
+}
+
+footer ul {
+    left: 35%;
+    top: 10px;
+    width: 50%;
+    position: relative;
+}
+
+footer .fas {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer .fa-plus-square {
+    font-size: 50px;
+}
+
+
+/*************** Responsive CSS ***************/
+
+@media screen and (max-width: 1217px){
+    footer ul {
+        left: 10%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 984px){
+    .lowernav {
+        top: 100px;
+        left: 45%;
+    }
+}
+
+@media screen and (max-width: 981px){
+    .topsearch {
+        width: 70%;
+        left: 200px;
+    }
+}
+
+@media screen and (max-width: 692px){
+    footer ul {
+        left: 10px;
+    }
+
+    footer .fas {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .lowernav {
+        top: 100px;
+        left: 25%;
+    }
+
+    footer ul {
+        left: 2px;
+    }
+}
